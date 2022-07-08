@@ -58,7 +58,7 @@ faxstore.on('login', function(userObject, DbUserResults) {
 | userAccountUndisabled      | staffUserId, user                                      | Emits when a users account is un-disabled.                                                | on   |
 | userAccountDisabled        | staffUserId, user                                      | Emits when a users account is disabled.                                                   | on   |
 | userAccountStaffNoteEdited | staffUserId, user                                      | Emits when a staff member updates a users staff notes.                                    | on   |
-| createCheckout             | user, cart, total, promoCode, paymentType            | Emits when a checkout is made on the site.                                                | on   |
+| createCheckout             | userObject, cart, total, promoCode, paymentType            | Emits when a checkout is made on the site.                                                | on   |
 | checkoutReturn             | userId, paymentId, cart                                | Emits when a checkout is returned to the store.                                           | on   |
 | checkoutCancel             | userId                                                 | Emits when a checkout is cancelled by the user                                            | on   |
 | subscriptionUpdated        | userId, expiry                                         | Emits when a subscriptions invoice is first generated                                     | on   |
