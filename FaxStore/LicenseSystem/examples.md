@@ -2,7 +2,6 @@
 - [V1 - Node.Js](#v1---node.js)
 - [V2 - Lua](#v2---lua)
 - [V1 - Lua](#v1---lua)
-- [V1 - PHP](#v1---php)
 - [V2 - PHP](#v2---php)
  
 
@@ -84,7 +83,7 @@ end, "POST", "", {
 ```lua
 local productId = 1
 local licenseKey = "ABC_123"
-PerformHttpRequest("https://yourlinkhere/api/checkitem/" .. productId, function(code, data, headers)
+PerformHttpRequest("https://license.example.com/api/checkitem/" .. productId, function(code, data, headers)
     print("Return code: " .. code)
     print("Return data: " .. data)
     print("Return headers: " .. headers)
@@ -95,44 +94,12 @@ end, "POST", "", {
 })  
 ```
 
-## V1 - PHP
-
-```php
-<?php
-$url = "https://license.example.com/api/checkitem/69"; // 69 is the ID of the product
-$license = "";
-$curl = curl_init();
-curl_setopt($curl, CURLOPT_URL, $url);
-curl_setopt($curl, CURLOPT_POST, true);
-curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
-
-$headers = array(
-   "Accept: application/json",
-   "Content-Type: application/json",
-   "authorization: $license",
-);
-curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
-
-
-$resp = curl_exec($curl);
-curl_close($curl);
-$data = json_decode($resp);
-
-if ($data->status == "OK") {
-    echo "License Passed";
-} else {
-    echo "License Failed";
-    exit;
-};
-?>
-```
-
 ## V2 - PHP
 
 ```php
 <?php
-$url = "https://license.example.com/api/check/multiple?proIds=6,9"; // 6 and 9 are the ids of the products
-$license = "";
+$url = "https://license.example.com/api/check/9"; // 9 is the product ID
+$license = "ABC_123";
 $curl = curl_init();
 curl_setopt($curl, CURLOPT_URL, $url);
 curl_setopt($curl, CURLOPT_POST, true);
