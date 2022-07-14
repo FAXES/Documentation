@@ -67,6 +67,8 @@ faxstore.on('login', function(userObject, DbUserResults) {
 | releaseCreate | storeItem, release, releaseId, staffUser | Emits when a release is created | on |
 | releaseEdit | release, staffUser | Emits when a release is edited | on |
 | releaseDelete | release, staffUser | Emits when a release is deleted | on |
+| blogpostCreate | userId, blogpost | Emits when a new blog post is created | on |
+| blogpostDelete | userId, blogpostId | Emits when a blog post gets deleted | on |
 
 
 *[Improve this page](https://github.com/FAXES/Documentation/blob/main/FaxStore/Events.md)*
