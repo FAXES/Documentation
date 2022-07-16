@@ -47,7 +47,7 @@ faxstore.on('login', function(userObject, DbUserResults) {
 | removeDiscordRole          | userId, roles [array]                                  | Removes roles from the user is possible.                                                  | emit |
 | addDiscordRole             | userId, roles [array]                                  | Adds roles to the user if possible.                                                       | emit |
 | invoiceCreated             | invoiceId, invoicedUser, staffUser, invoicedItems, due | Emits when a invoice is created.                                                          | on   |
-| invoiceUpdated             | invoiceId, invoicedUser, due | When an invoice is automatically updated for it's status, this event emits.               | on   |
+| invoiceUpdated             | invoiceId, invoicedUser, due, state | When an invoice is automatically updated for it's status, this event emits.               | on   |
 | login                      | userObject, DbUserResults                              | Emits when a user logs into the site.                                                     | on   |
 | logout                     | userObject                                             | Emits when a user logs out of the site.                                                   | on   |
 | createUserAccount          | userObject, serviceType                                | Emits when a users account is first created.                                              | on   |
@@ -61,9 +61,9 @@ faxstore.on('login', function(userObject, DbUserResults) {
 | createCheckout             | userObject, cart, total, promoCode, paymentType            | Emits when a checkout is made on the site.                                                | on   |
 | checkoutReturn             | userId, paymentId, cart                                | Emits when a checkout is returned to the store.                                           | on   |
 | checkoutCancel             | userId                                                 | Emits when a checkout is cancelled by the user                                            | on   |
-| subscriptionUpdated        | userId, expiry                                         | Emits when a subscriptions invoice is first generated                                     | on   |
-| subscriptionCancelled      | subscription, userObject                               | Emits when a subscription is cancelled by a user.                                         | on   |
-| subscriptionEnded          | subscription, userId                                   | Emits when a subscription ends after being cancelled.                                     | on   |
+| subscriptionInvoiceCreated | invoiceId, userObject, items, expiry | Emits when a subscriptions invoice is first generated | on |
+| subscriptionCancelled | subscription, userObject | Emits when a subscription is cancelled by a user. | on |
+| subscriptionEnded | subscription, userId | Emits when a subscription ends after being cancelled. | on |
 | releaseCreate | storeItem, release, releaseId, staffUser | Emits when a release is created | on |
 | releaseEdit | release, staffUser | Emits when a release is edited | on |
 | releaseDelete | release, staffUser | Emits when a release is deleted | on |
