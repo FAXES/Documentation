@@ -1,5 +1,16 @@
 Since the 2.2 update of FaxStore permissions now use a new bitfield based system to allow better customisation and cater for every store owner. Below is a table that contains all the permissions that are in FaxStore.
 
+Function example:
+```js
+// hasPermission(userData, permission)
+// The second parameter (permission) can be a string of a permission or an array of permissions, if one is met it returns true.
+if(hasPermission(userData || userInfo || {id: userId, bitfield: userBitfield}, 'VIEW_USERS')) {
+  console.log(`User has permission 'VIEW_USERS'`);
+  // Function returns a BOOLEAN
+}
+```
+This function is available as an event, and function in backend and EJS files.
+
 | Name | Description |
 |---|---|
 | NONE | No permissions for the user. This is used for normal site users. |
