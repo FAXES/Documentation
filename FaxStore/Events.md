@@ -69,6 +69,7 @@ faxstore.on('login', function(userObject, DbUserResults) {
 | releaseDelete | release, staffUser | Emits when a release is deleted | on |
 | blogpostCreate | userId, blogpost | Emits when a new blog post is created | on |
 | blogpostDelete | userId, blogpostId | Emits when a blog post gets deleted | on |
+| hasPermission | userData, permission | UserData (object) and permission (string or array). This event is to check for a [permission](/c/faxstore/permissions) a user may have. | on |
 
 
 *[Improve this page](https://github.com/FAXES/Documentation/blob/main/FaxStore/Events.md)*
