@@ -3,7 +3,7 @@
 
 Syntax
 
-```
+```js
 
 Text // Represents a basic text field question
 :TextArea // Creates the question as a text area
