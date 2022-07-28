@@ -113,7 +113,8 @@ curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
 $resp = curl_exec($curl);
 curl_close($curl);
 $data = json_decode($resp);
-if ($data->status == "OK") {
+// Example response: {"status":"AUTHORISED","pass":true,"details":"Authorisation completed - https://license.example.com"}
+if ($data->pass == true) {
     echo "License Passed";
 } else {
     echo "License Failed";
