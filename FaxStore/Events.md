@@ -70,10 +70,10 @@ faxstore.on('login', function(userObject, DbUserResults) {
 | blogpostCreate | userId, blogpost | Emits when a new blog post is created | on |
 | blogpostDelete | userId, blogpostId | Emits when a blog post gets deleted | on |
 | hasPermission | userData, permission | UserData (object) and permission (string or array). This event is to check for a [permission](/c/faxstore/permissions) a user may have. | on |
-| formCreate | userId, blogpostId | Emits when a form is created | on |
-| formSubmitted | userId, blogpostId | Emits when a form gets submitted by a user | on |
-| formReply | userId, blogpostId | Emits when a form is replied to | on |
-| formDelete | userId, blogpostId | Emits when a form is deleted | on |
+| formCreate | userObject, formObject | Emits when a form is created | on |
+| formSubmitted | userObject, formId, form | Emits when a form gets submitted by a user | on |
+| formReply | userObject, formId, comment | Emits when a form is replied to | on |
+| formDelete | userObject, formObject | Emits when a form is deleted | on |
 
 
 *[Improve this page](https://github.com/FAXES/Documentation/blob/main/FaxStore/Events.md)*
