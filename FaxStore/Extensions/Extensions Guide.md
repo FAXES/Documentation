@@ -1,7 +1,5 @@
 # Creating Extensions
 
----
-
 ## Creating A Basic Extension
 
 To create a extension you can use the following code example to get you started
