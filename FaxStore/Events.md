@@ -74,6 +74,9 @@ faxstore.on('login', function(userObject, DbUserResults) {
 | formSubmitted | userObject, formId, formObject | Emits when a form gets submitted by a user | on |
 | formReply | userObject, formId, comment | Emits when a form is replied to | on |
 | formDelete | userObject, formObject | Emits when a form is deleted | on |
+| reviewCreated | userObject, reviewId, reviewObject | Emits when a revire is created by a user | on |
+| reviewResponse | userObject, reviewId, comment | Emits when a review is replied to by a staff member | on |
+| reviewDeleted | userObject, reviewId | Emits when a review is deleted | on |
 
 
 *[Improve this page](https://github.com/FAXES/Documentation/blob/main/FaxStore/Events.md)*
