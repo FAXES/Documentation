@@ -14,7 +14,7 @@ const extConfig = {
 }
 
 
-module.exports = async function(app, connection, bot,, faxstore) {
+module.exports = async function(app, connection, bot, faxstore) {
    // Code Here   
 }
 ```
