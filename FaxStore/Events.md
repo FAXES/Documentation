@@ -71,7 +71,7 @@ faxstore.on('login', function(userObject, DbUserResults) {
 | blogpostDelete | userId, blogpostId | Emits when a blog post gets deleted | on |
 | hasPermission | userData, permission | UserData (object) and permission (string or array). This event is to check for a [permission](/c/faxstore/permissions) a user may have. | on |
 | formCreate | userObject, formObject | Emits when a form is created | on |
-| formSubmitted | userObject, formId, formObject | Emits when a form gets submitted by a user | on |
+| formSubmitted | userObject, formId, formObject, submissionObject | Emits when a form gets submitted by a user | on |
 | formReply | userObject, formId, comment | Emits when a form is replied to | on |
 | formDelete | userObject, formObject | Emits when a form is deleted | on |
 | reviewCreated | userObject, reviewId, reviewObject | Emits when a revire is created by a user | on |
