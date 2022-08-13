@@ -116,6 +116,18 @@ Below you will find all the info returned when the `blogpost` is called.
 }
 ```
 
+## Review Object
+
+Below you will find all the info returned when the `reviewObject` is called.
+
+```json
+{
+"product":"Store Item",
+"stars":"2",
+"comment":"asdasd"
+}
+```
+
 
 ### More Objects Coming Soon
 
