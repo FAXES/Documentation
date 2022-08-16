@@ -16,7 +16,7 @@ FaxStore will also launch a screen session for you and give you the prompt to st
 
 4. FaxStore will start and prompt you through a brand new setup process.
 
-*This is a beta feature, so give us [feedback](https://bugs.faxes.zone/projects/faxstore/add?t=feedback) on your experience with this simplified imstall.*
+*This is a beta feature, so give us [feedback](https://bugs.faxes.zone/projects/faxstore/add?t=feedback) on your experience with this simplified install.*
 *[Improve this page](https://github.com/FAXES/Documentation/tree/main/FaxStore)*
 
 :::info
