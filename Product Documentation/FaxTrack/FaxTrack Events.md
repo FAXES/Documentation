@@ -24,13 +24,13 @@ faxtrack.on('projectCreated', function(userObject, projectObject) {
 | projectCreated | userObject, projectObject | Emits when a new project is created | on |
 | projectEdited | userObject, projectObject | Emits when a project is edited | on |
 | projectDeleted | userObject, projectObject | Emits when a project is deleted | on |
-| issueCreated | userObject, issueObject | Emits when an issue is created | on |
+| issueCreated | userId, issueObject | Emits when an issue is created | on |
 | issueSolved | userObject, solveObject, issueObject | Emits when an issue is marked as solved | on |
-| issueDeleted | userObject, issueId | Emits when an issue is deleted | on |
+| issueDeleted | userObject, issueObject | Emits when an issue is deleted | on |
 | issueComment | userObject, comment, issueObject | Emits when an issue is commented on | on |
-| feedbackCreated | userObject, feedbackObject | Emits when a feedback topic is created | on |
+| feedbackCreated | userId, feedbackObject | Emits when a feedback topic is created | on |
 | feedbackSolved | userObject, solveObject, feedbackObject | Emits when a feedback topic is marked as solved | on |
-| feedbackDeleted | userObject, issueId | Emits when a feedback topic is deleted | on |
+| feedbackDeleted | userObject, feedbackObject | Emits when a feedback topic is deleted | on |
 | feedbackComment | userObject, comment, feedbackObject | Emits when a feedback topic is commented on | on |
 
 *[Improve this page](https://github.com/FAXES/Documentation/blob/main/FaxStore/Events.md)*
