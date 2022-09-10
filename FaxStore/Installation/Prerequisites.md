@@ -32,12 +32,6 @@ These specs may vary and be higher or lower, depending on things like, file size
 
 #### Don't Have a Server?
 
-Take a look at [Snowside Hosting](https://snowsidehosting.com). I'm a partner with Snowside and can offer you a great discount on all of their products!
+Whether you’re working on a personal project or managing your enterprise’s infrastructure, Linode has the pricing, support, and scale you need to take your ideas to the next level.
 
-Their [medium](https://snowsidehosting.com/store/vps) and [large](https://snowsidehosting.com/store/vps) VPS plans are great.
-
-But wait there's more!
-
-Use code `FAXES` at checkout and receive an exclusive **25% OFF** with your order. This discount also applied for all billing periods so you can site back and relax knowing you're saving money.
-
-Take a look further @ https://snowsidehosting.com
+<a href="https://linode.gvw92c.net/c/3604466/903982/10906" target="_blank" id="903982"><img src="https://weblutions.com/i/GSM2SG.png" border="0" alt="" width="728" height="90"/></a>
