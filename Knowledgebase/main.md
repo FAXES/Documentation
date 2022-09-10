@@ -4,6 +4,4 @@ Looking for something that is worthy of general knowledge? Or perhaps you're loo
 
 ### Don't have hosting?
 
-Use code `FAXES` @ [Snowside](https://snowsidehosting.com) for a 25% off recurring discount. Check them out today!
-
-![snowside](https://faxes.zone/i/p9XOC.gif)
+<a href="https://linode.gvw92c.net/c/3604466/903982/10906" target="_blank" id="903982"><img src="https://weblutions.com/i/GSM2SG.png" border="0" alt="" width="728" height="90"/></a>
