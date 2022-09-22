@@ -77,11 +77,11 @@ faxstore.on('login', function(userObject, DbUserResults) {
 | reviewCreated | userObject, reviewId, reviewObject | Emits when a revire is created by a user | on |
 | reviewResponse | userObject, reviewId, comment | Emits when a review is replied to by a staff member | on |
 | reviewDeleted | userObject, reviewId | Emits when a review is deleted | on |
-
 | storeListingCreate | userObject, listingObject | Emits when a new store listing is created. | on |
 | storeListingEdit | userObject, listingId, listingObject | Emits when a store listing is edited. | on |
 | storeListingPause | userObject, listingId, newState | Emits when a store listing pause setting is toggled. | on |
 | storeListingDelete | userObject, listingId | Emits when a store listing is deleted | on |
+| notificationCreated | userId, redirectURL, detailsObject | Emits when a notification is created. | on |
 
 
 *[Improve this page](https://github.com/FAXES/Documentation/blob/main/FaxStore/Events.md)*
