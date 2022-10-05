@@ -4,6 +4,8 @@ Installing WebForms is easy provided the guides are followed fully. Please take 
 - Domain Name
 - Discord Account
 
+<a href="https://linode.gvw92c.net/c/3604466/903982/10906" target="_blank" id="903982"><img src="https://weblutions.com/i/GSM2SG.png" border="0" alt="" width="728" height="90"/></a>
+
 :::info
 This is a Node.Js based website and requires a server to be ran. This will not run on common 'Shared Hosting' plans.
 :::
