@@ -45,7 +45,7 @@ fetch(url, options)
   .catch(err => console.error('error:' + err));
 ```
 
-### Creating a Tracked Statistic
+## Creating a Tracked Statistic
 
 Data keys are keys that we usee in our API request. These should be line seperated for multiple to e in the request. They can contain spaces, -, and _ characters. However no additional special characters.
 
