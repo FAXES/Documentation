@@ -18,7 +18,7 @@ Complete the install of a LEMN stack if you have not done so before.
 
 ### Step Two
 
-Now upload your FaxTrack files into a new directory on the machine under `/home/webforms`.
+Now upload your WebForms files into a new directory on the machine under `/home/webforms`.
 
 Install the database by logging into MySQL.
 
@@ -36,7 +36,7 @@ Edit the config.json file located at `/home/webforms/config.json`
 
 Then open a new [screen session](https://docs.faxes.zone/c/knowledgebase/screen).
 
-Now run the below commands to get FaxTrack started.
+Now run the below commands to get WebForms started.
 
 ```
 cd /home/webforms
