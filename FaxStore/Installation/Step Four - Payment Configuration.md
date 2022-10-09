@@ -32,7 +32,7 @@ Save the file and that is completed.
 
 ### Stripe
 
-[Stripe](https://stripe.com) is the newer payment method supported by FaxStore. Stripe is also a little more straight forward.
+[Stripe](https://stripe.com) is another payment processor built into FaxStore.
 
 Create a Stripe account if you haven't. Once you have go to the dashboard and click on 'Developers' in the top right
 
@@ -54,4 +54,20 @@ Save the config
 
 ---
 
+### Square
+
+[Square](https://squareup.com) is the third payment method supported on FaxStore. Setting up Square is easy.
+
+Create a Square account at https://squareup.com. Once you have done so, go to the developer portal https://developer.squareup.com/apps
+
+Once you're here create a new application, name it as you wish and go and view the application.
+
+Ensure to click 'Production' at the top of the page. Once on production you will see the 'Production Application ID' and the 'Production Access token'.
+
+Copy these tokens and place into the FaxStore config file and save. Job done :)
+
+---
+
 You have now configured payments for FaxStore. Move forward to the [Login Configuration](#)
+
+*[Improve this page](https://github.com/FAXES/Documentation/blob/main/FaxStore/Installation/Step%20Four%20-%20Payment%20Configuration.md)*
