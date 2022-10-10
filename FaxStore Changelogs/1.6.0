@@ -1,0 +1,56 @@
+Where's 1.5? 1.5 Was a beta version released to beta testers and is not available to non Deluxe customers
+
+Updates will now have a feature title to help identify update versions. This update has a crap ton of changes and this list will be long...
+
+**SQL CHANGES:**
+SQL is now on an auto update system! This means you no longer have to manually import the updated SQL content into your database. It will all be done for you. The `UPDATE.sql` file will still be updated with the latest content in-case you wanted to see what's new
+
+**CONFIG CHANGES**
+Your config file will need to be re-done. After this update new config changes will be automatic!
+---
+Sorry for the long wait that took for this update to be pushed. Every bug should be squashed and there's a lot of changes made to your site.
+
+This is what's changed:
+
+- Added Stripe. Configure it in your config file
+- Added an option to change the checkout currency
+- Added a new function to giftcards which allows them to have a balance
+- Added a new blog system. This can be toggled on/off. Soon to support email handling. Blogs also have categories
+- Added a new scrollbar design. It's now more out the way and fits into the sites design
+- Added the start of profile customisation. Currently not much has been started on this other than bios on user accounts. Currently doesn't have any other functions
+- Added the ability to run separate Javascript files from launch. This gives users the ability to create addons and easily implement them Eg; Sharex
+- Added GitHub as a social link
+- Added customisable option for Demo button text on store items
+- Added the ability for site owners to see releases without having to purchase them
+- Added a 'See full review' button to store item view pages
+- Added item prices to the search page
+- Added currency display to cart page
+- Added more space to the nav bar. The center div is now bigger
+- Added function to display cart messages. When a promo code is added a success message appears
+- Promotion codes now have the option of having required Discord role(s) to be used
+- Added a `connection.ping()` function to help stop MYSQL server connection timeouts
+- Added ability to format links on the home page
+- Added partner full display pages. Added user ID's are able to edit partner content along with more admin options
+- Fixed an issue which made promo codes not update usage counts
+- Fixed an issue that caused an error to be displayed on users screens after login. the `Failed to fetch user's guilds` - https://faxes.zone/i/D5goy.gif this is now gone
+- Fixed an issue that caused 'Download' buttons to not display on store items from the search page
+- Fixed a major issue that broke the reviews page when there was no reviews created
+- Fixed multiple cart issues. If there's multiple of the same item in the cart they will now list down.
+- Fixed an issue that would cause the text 'ss' to be displayed on the Social links admin page - https://cdn.hyperz.dev/7b1zuygl.png
+- Fixed an issue where user would have `-1` owned items. This issue couldn't be fully traced to a cause. This is still in testing
+- Fixed maintenance mode. Yay
+- Fixed an issue that would cause a 'role' related error in console
+- Changed further how PayPal transactions display. They now display even more information
+- Changed how user emails and IPs are displayed for admins. They're now blurred when not hovered
+- Changed the way items are added tot he cart when logged out. Added items will now persist once logged in
+- Changed how profile points are displayed. With the new bio content they needed to be made a touch smaller
+- Changed how the navbar is displayed. It is now centered in the div it's located in to make a better look.
+- Changed some items in the CSS and client JS files to help with Google indexing
+- Removed some tokens from the config file and moved them to different locations
+- Removed some pings from log messages
+**Please READ**
+With this update further implements user data collecting. This in most countries required a privacy policy on the site to define how data is used and what is collected. There is a privacy policy being added to my own site in full. Please take note that you may be required by law to have this included on your site.  
+You're welcome to copy mine or create your own. Data that is collected and used includes 
+- connected emails. Used for logging and for the administrational purposes of operating the site and contacting users
+- IPs. Used to collect and match with other IPs in the sites ban system along with logging purposes for the site.
+The way you distribute this data also has to be defined. I take no responsibility in actions you take with users actions. Please be responsible and follow my own ToS in regards to how you distribute user data and site availability.

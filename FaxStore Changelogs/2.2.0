@@ -1,0 +1,29 @@
+This update brings some breaking changes as defined on [this post](https://bugs.faxes.zone/f/47) regarding the permissions of FaxStore. But, It also brings a new highly requested feature - forms. Forms can be created as forms or even as a ticket type system, it's all up to you!
+
+:::danger
+**Attention License System Users**
+As this update changes the permissions of FaxStore the license system is required to be updated to 1.7 to ensure you are able to have permissions on your license system.
+:::
+
+:::warning
+With the previous permission system being deleted any site staff (except config owners) will lose access, access will need to be re-granted.
+:::
+
+
+- Added forms system which allows you to create, submit, and delete custom forms. See the [forms docs](https://docs.faxes.zone/c/faxstore/feat-forms) for syntax on form creation - [#48](https://bugs.faxes.zone/f/48).
+- Added new permission system, documented [here](https://docs.faxes.zone/c/faxstore/permissions) which allows for a much more advanced permission system.
+- Added an event to natively check for user permissions, this is documented [here](https://docs.faxes.zone/c/faxstore/permissions) - [#35](https://bugs.faxes.zone/f/35).
+- Added events for forms, see the [events docs for more](https://docs.faxes.zone/c/faxstore/events).
+- Added a check for orders less than Stripes 50c minimum - [#898](https://bugs.faxes.zone/i/898).
+- Added functionality to remove Discord perks from users when a subscription is overdue.
+- Added a license system property to advanced settings which adds a license link to user profiles.
+- Fixed a SQL syntax error when files with quotes would uploaded - [#910](https://bugs.faxes.zone/i/910).
+- Fixed bug where users would be redirected to the incorrect page when deleting a promotion code.
+- Changed some backend functions for security purposes.
+- Changed how site displays are checked, any site displays uploaded to the folders can be checked.
+- Changed file structures for multiple requests to organise content.
+- Changed login redirects to have the user navigated to the correct pages.
+- Removed some display elements from the search page.
+- Removed `users.itemsCount` table column.
+- Removed `users.credits` table column.
+- Removed `users.lang` table column.

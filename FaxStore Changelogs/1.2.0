@@ -1,0 +1,6 @@
+This update fixes a much needed to be killed bug and introduces some other upkeep and slight changes.
+
+- Added the new item type options to item edit pages.
+- Added more detailed emails when a purchase is made. It now lists all the items purchased. See; https://faxes.zone/i/fl29c.png
+- Fixed a bug that prevented items being created. This was due to the new Redirect Link item type field being hidden but required in the form.
+- Removed some debugging logs that may of been outputted from transactions. This was to initially grab information to add payment Ids.

@@ -1,0 +1,25 @@
+This update brings some fixes to multiple things along with a new system 'General Pages' which allows you to build custom pages under custom links. This gives you even more options when creating a new about me or other static page.
+
+**SQL CHANGES:**
+This update has SQL changes. BUT, SQL updates are automatic and no longer require you to update the SQL database yourself.
+
+**File Changes:**
+When updating to this version be sure to update the following files;
+`index.js`, `/views`, `backend.js`, `updatemanager.js`, `/public/assets/main.CSS`, `/public/assets/main.JS`, `/public/assets/icons.SVG`, `/public/themes`.
+
+Changes:
+
+- Added general pages system. Found under the admin panel
+- Added ability for admins to delete pages - https://faxes.zone/i/hK1Ez.png
+- Added CSS to allow nice formatting of images in blog posts and some other pages
+- Added the option to change the site logo and background through the admin site
+- Added the new option to display prices. See store settings page - https://faxes.zone/i/rJU1U.png
+- Added border rounding to the alert bar
+- Added closing of alert bar. It can be closed by clicking it
+- Added 'edited' text to blog posts if they're updated instead of updating the username
+- Added user notes. They can be seen by staff only and found at the bottom of the users profile page
+- Fixed maintenance mode being broken. This should now be finally fixed
+- Changed some backend links around to help prepare for future development and easy backend operations
+---
+We also conducted some research methods into the themes update to come at version 2.0. The next few updates will feature some changes to help prepare for that update.
+

@@ -1,0 +1,96 @@
+The long awaited 2.0 update is one of the largest updates to ever be released for FaxStore and is being classed as a major release!
+
+This update brings the long awaited native theme support along with a new 'controller' and 'displays' among so many more features.
+
+:::info
+This update brings a new file structure to many files. Please be careful when updating your files. If you need help open a `/ticket` with our product support team.
+:::
+
+:::warning
+This release requires `npm install` to be ran before starting after file updates.
+:::
+
+:::danger
+You WILL RECIEVE an option to launch the start up on first start. IF YOU ARE UPDATING **SAY NO** TO THE PROMPT!
+:::
+
+- Added the long awaited themes. See the GitHub page for published themes - https://github.com/FAXES/faxstore-themes.
+- Added a setup page for first time starts. This is in beta still while feedback is submitted.
+- Added permanent login sessions to save users constantly logging in an out after FaxStore restarts.
+- Added invoices and orders to the purchases stats on the home page.
+- Added a new system to check for subscriptions. This will ensure they never get skipped.
+- Added optional cookie notice for pages. This was aimed for EU customers where a cookie disclaimer is required.
+- Added a module check for start up which will help with debugging.
+- Added store stats to the staff home page.
+- Added ability to cancel invoices.
+- Added ability to edit invoices. This also notifies the user their invoice was edited.
+- Added an expand button to releases to make the page more user friendly.
+- Added some storing of customer information on receipts.
+- Added a scrollbar for user email table.
+- Added HTML rendering in email views.
+- Added audit log creations for invoice creations.
+- Added display system.
+- Added release page displays.
+- Added store page displays.
+- Added review page displays.
+- Added home page displays.
+- Added controller which contains a console replication and some backend functions.
+- Added URI parameters to users page.
+- Added a search bar to store items page.
+- Added 'Linked Items' which when used will also add the linked items to the users account.
+- Added 'Show in downloads' option to products to toggle the display of the item in the users downloads.
+- Added a check for a bot token so it's optional throughout the system.
+- Added descriptions and search toggle to store categories.
+- Added owner notifications to over due invoices.
+- Added timed promo codes which support `1d` form or Unix for for expiries.
+- Added an update checker banner to the staff panel.
+- Added username hyperlinks to the invoice tables in the staff panel.
+- Added username hyperlinks to the subscriptions tables in the staff panel.
+- Added ability to edit team members.
+- Added UI masks for the new displays.
+- Added bug tracker API reporting.
+- Added the removal of Discord roles when a subscription is cancelled.
+- Fixed the display of header dropdowns.
+- Fixed duplicate header rows for dropdown items in the staff panel.
+- Fixed an issue where `-3` was displayed on home page stats.
+- Fixed a boot error which commonly occurred.
+- Fixed multiple errors which related to the `replace()` function.
+- Fixed issue with unsubscribe button in emails.
+- Fixed insight graphs.
+- Fixed an SQL error relating to user creations.
+- Fixed issue where files and/or images couldn't upload.
+- Fixed some display issues when creating an invoice.
+- Fixed a security issue where DOM JS could be placed into markdown areas.
+- Fixed a bug where receipts and PDFs would only capture the last item in a cart.
+- Fixed role permissions breaking on discount codes.
+- Fixed issue where users logging in from non Discord services could get staff perms.
+- Fixed bug where paused store items still has an 'Add to cart' button on search pages.
+- Fixed issue where invoices wouldn't update to 'Over Due' status.
+- Fixed a bug where edited subscription time frames didn't update the product.
+- Fixed a display issue that was on the invoice tables in the staff panel.
+- Fixed Twitter logins because they were reported to be broken.
+- Fixed an issue where deleted items that were in peoples carts would break the cart page.
+- Fixed an issue where Discord roles wouldn't be applied to subscription users.
+- Fixed order items not having a price tag on the store page.
+- Fixed custom pages returning a 404 response - [#10](https://bugs.faxes.zone/projects/faxstore/issues/?id=10)
+- Updated the invoice view page fully with a complete redesign.
+- Updated the payment view page fully with a complete redesign.
+- Updated owners config item to an array.
+- Updated built in `/user` command to be ephemeral.
+- Updated the display for payment amounts on owned items.
+- Updated the PayPal API to v2. This will fix any PayPal issues with multiple cart items being present.
+- Updated the default config to disable emails.
+- Updated the FaxStore text to a smaller text set on start up.
+- Updated the display of memos on PayPal transactions.
+- Updated 'FaxStore 2' to 'FaxStore' in multiple areas.
+- Updated the display of stats on the home and staff home pages (includes commas).
+- Removed `itemCount` usage from SQL.
+- Removed custom uploads from displaying on owned items page.
+- Removed '(server time)' from being in receipts.
+- Removed `extraFiles` config option as per previous change-log.
+
+---
+
+This is a very large update. We encourage all to seek help via the `#faxstore-support` channel where possible. Create a `/ticket` if you need one on one help.
+
+Not in the Discord and need help? Contact us [store@faxes.zone](mailto:store@faxes.zone).

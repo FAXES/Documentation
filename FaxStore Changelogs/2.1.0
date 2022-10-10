@@ -1,0 +1,22 @@
+This update brings many fixes front and backend and is the first major update since we started using our [bug tracker](https://bugs.faxes.zone/) and it has been working wonders to correct bugs automatically and even get the feedback from you. So many have participated there already it's great.  
+
+With secondary payments and sales tax being introduced in this update among other features and new events there lots to look forward to for FaxStore!
+---
+Secondary payments. See [docs](https://docs.faxes.zone/c/faxstore/secondary-payments) and give [feedback](https://bugs.faxes.zone/projects/faxstore/add?t=feedback).
+Sales tax allows a fixed rate to be taxed on purchased - [#4](https://bugs.faxes.zone/projects/faxstore/feedback/?id=4).
+Added a referral system which tracks site clicks and actions (purchases from referral) - [#30](https://bugs.faxes.zone/projects/faxstore/feedback/?id=30).
+Added more events which are now [documented](https://docs.faxes.zone/c/faxstore/events) - [#3](https://bugs.faxes.zone/projects/faxstore/feedback/?id=3), [#42](https://bugs.faxes.zone/projects/faxstore/feedback/?id=42).
+Added ability to delete gift cards from users profiles.
+Added a safe-guard for PayPal checkout redirect links - [#219](https://bugs.faxes.zone/projects/faxstore/issues/?id=219).
+Added new 'Promotions' page which now contains promotional codes and the new referral system.
+Added promotional codes to be displayed on payment receipts.
+Fixed an issue which was located on the `/403` page - [#675](https://bugs.faxes.zone/projects/faxstore/issues/?id=675), [#693](https://bugs.faxes.zone/projects/faxstore/issues/?id=693).
+Fixed an issue which conflicted version numbers - [#211](https://bugs.faxes.zone/projects/faxstore/issues/?id=211).
+Fixed a few audit logs that has incorrect grammar or incorrect titles.
+Fixed the display of the 'Create review' button on the bars display page - [#664](https://bugs.faxes.zone/projects/faxstore/issues/?id=644).
+Fixed a display issue where cancelled subscriptions would not list as cancelled - [#540](https://bugs.faxes.zone/projects/faxstore/issues/?id=540).
+Fixed an issue with GitHub account creation - [#711](https://bugs.faxes.zone/projects/faxstore/issues/?id=711).
+Changed some file structures again to better fit the customisations coming to FaxStore.
+Changed the style properties of the footer icons as requested - [#672](https://bugs.faxes.zone/projects/faxstore/issues/?id=672).
+---
+When updating be sure to do `npm i` as always.

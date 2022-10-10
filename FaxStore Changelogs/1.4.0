@@ -1,0 +1,13 @@
+This fixes some bugs that were created in the last update.  
+
+Thank you to [@JipyTheDev#7465](https://discord.gg/VmWkzaSyQ3) for helping debug these errors.
+
+- Added a SQL table checker. If a table or database isn't connected to the app will close. This used so fatal errors are avoided in live use.
+- Fixed an issue that would cause an error where .catch() isn't a function.
+- Fixed an issue that caused the 'Create Header' form to break.
+- Fixed an issue that caused an error to display if a PayPal checkout was invalid. It now returns to a page.
+- Changed how cart items are added. If a cart item is added while logged out it will now remain in the users cart.
+---
+There may not be a direct update any time soon for FaxStore unless it's an important fix. We're working on some beta features (teased below) which could take some time. Deluxe user will have early access to these new features.
+
+Some things we're working on for 1.4 is; new scrollbars, profile customisation, subscription services, blog system.

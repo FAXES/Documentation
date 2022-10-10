@@ -1,0 +1,29 @@
+This update brings a few new minor features along with some bug fixes. The focus in this update is the review pages and how they're displayed along with edits to account pages and STT API being added.
+---
+**THIS UPDATE INCLUDES AN SQL UPDATE FILE!!!**
+To update your SQL tables ONLY execute the `UPDATE.sql` file. This must be done before starting the application on the new update
+
+**IMPORTANT PROMOCODES**
+You will be required to re-create all promotion codes on your store as there's new features. Existing codes will no longer work.
+
+There is no updates to the config file.
+---
+- Added stars to review pages and removed text.
+- Added STT API to the site. [See more](https://strongertogether.network/article/16)
+- Added max uses to promotion codes.
+- Added current uses to promotion codes.
+- Added clickable usernames in reviews.
+- Added user email to profiles. Only admins can see.
+- Added errors to the cart area. Currently only used for promo code errors.
+- Added an average rating onto the reviews home page - https://faxes.zone/i/LrA83.png.
+- Changed the way full review pages display content. [Old](https://faxes.zone/i/5gDka.png) vs [new](https://faxes.zone/i/DIkV2.png).
+- Changed the promotion codes table/form in the admin panel to display new content - https://faxes.zone/i/jp4ZU.png.
+- Fixed a spelling issue that was on PayPal transactions
+- Fixed descriptions not displaying. This is still in review as it can't be tested fully.
+- Fixed an issue that caused a crash/error in console regarding the `get()` event in Discord.Js. `Catch()` functions have been added.
+- ~~Added promotion code blurs in admin panel~~
+
+---
+There may not be a direct update any time soon for FaxStore unless it's an important fix. We're working on some beta features (teased below) which could take some time. Deluxe user will have early access to these new features.
+
+Some things we're working on for 1.4 is; new scrollbars, profile customisation, subscription services, blog system.

@@ -1,0 +1,65 @@
+Please note before updating to read through the whole changelog and details. This is an important update and will have breaking changes if left.  
+
+This update of FaxStore introduces multiple login methods and tons of tweaks and features to the way FaxStore operates and looks. With over 50 changes in this update there is plenty changing. Read the full change-log below.  
+
+This update also simplifies the admin panel nearly in a whole. Adding dropdowns and more pages to declutter pages that were getting a bit full on.  
+
+Please ensure if you're changing login methods in this update to not lock yourself out by not having other login methods as admins  
+---
+## SQL & Config Updates
+SQL and config updates are now automatic and no longer require manual changes. The config file in this version introduce a whole new section for emails. Your previous email settings and API tokens will get copied.
+
+## Node.Js v16 Required
+This update has Discord.Js v13 which requires newer versions of Node.Js. For this please refer to the below guide for updating Node if you need
+https://docs.faxes.zone/c/knowledgebase/updatenode
+---
+## Before Starting  
+Before starting your updated version of FaxStore be sure to reinstall the NPM modules using the below command.
+
+`npm install`  
+Your FaxStore will break if this is not done.
+---
+## Item Repositioning & License System
+This update introduces a new way to sort your items in the store listing. This will update the position of all your store listings when you first update. You can still change these via the old way and the new way (mentioned in logs).  
+In, addition all store items you wish to be using the license system (if installed) must have the license system enabled in the store listing itself. Edit the store listing to enable
+
+## Changes
+- Added Google login method
+- Added GitHub login method
+- Added Twitter login method
+- Added option to disable user accounts
+- Added audit logs to admin panel. This audits and site changes that are made along with purchases. These can't be deleted and help prevent logging issues that were present in Discord logs.
+- Added brand new statistics to insights. Total users; displays total users, Customers; displays all customers that have one purchase or more
+- Added more button options for banning and disabling to user profile pages
+- Added a users login method to user profile pages
+- Added home page stats which adds some basic site stats onto the home page at the bottom
+- Added ability to email a select user or all registered users
+- Added email user option to user list page in admin panel
+- Added the 'Editor' permission which allows blog and general page permissions.
+- Added a brand new user page which remade the whole user profile page
+- Added a function on the store listing page to move store items up and down
+- Added new functionality to the alert bar that closes the bar when clicked for the users browser session
+- Added a new function to store items where if the license system is installed will require store listings to have the license key system enabled
+- Added login types to the admin panel under 'Advanced Site Settings'. Here you can enable and disable login methods
+- Added a new table column to display what login method type the user has
+- Fixed an issue that caused auto complete to be on with some forms
+- Fixed an error that displayed if a Discord logging channel `get()` function failed
+- Fixed an issue that would display the error 'Cannot read property '0' of undefined` in multiple areas on the store.
+- Fixed an error that would display `Error: Request failed with status code 403` when starting the store
+- Fixed the display of the percentage symbol on the cart page to now display on the correct side
+- Fixed a bug with general pages which would display 'Blog' in the site title
+- Fixed an issue that caused income stats to not displayed discounted amounts
+- Fixed an issue that would cause a possible site crash if a user was banned in Discord
+- Changed config file to add new email options
+- Changed the whole admin panel, adding dropdowns and decluttering pages on the admin panel
+- Changed where the hidden store listing text is located on store listings - https://faxes.zone/i/E1tBj.png
+- Changed how the backend handles site headers and footers. These are now simplified on the backend javascript files
+- Changed how usernames are displayed on the navigation bar button
+- Changed 'Discord Id' to 'User Id' in the staff manager page along with changing the max characters the user Id can take
+- Changed some permissions for staff roles. See the updated permissions here - https://docs.faxes.zone/c/faxstore/permissions
+- Changed price amounts on user profile pages to display the discounted amount if it was discounted
+- Changed how prices display on user profiles. They now have two decimal points
+- Updated to the new Discord logo icon throughout the site
+- Updated to Discord.Js v13
+- Updated Discord API calls to v9
+- Removed Terms of Service admin page. It's now moved into the site settings page

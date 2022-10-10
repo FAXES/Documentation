@@ -1,0 +1,66 @@
+Update 1.9 is one of the biggest FaxStore updates to ever release, with the addition of 3 new listing types along with full notification system, this update has something for you in it!
+
+> Please see the below link on how to update to 1.9 as there is many file location changes in this update.
+*https://docs.faxes.zone/c/faxstore/updating-faxstore#updating-to-1.9*
+
+If you experience issues with updating let us know in [#faxstore-support](https://discord.com/channels/358072894867111966/838593083833712671)
+
+---
+
+- Added new listing type; 'Order'. This listing type allows for physical items to be purchased on FaxStore, with a required address field and ability to add tracking links. Orders might just be perfect for merch. This also adds statues to orders to mark shipped, processing etc
+- Added new listing type; 'Subscription'. This listing type allows for periodic payments to be scheduled to be paid. Invoices are automatically generated to be paid by users
+- Added invoices, these are currently only utilised to auto generate. However, custom invoicing is coming
+- Added new listing type; 'Pre-Order'. This listing type allows for pre-orders where users can't download the product until the listing type is changed to 'Digital Paid'
+- Added new listing type; 'Digital Approved' which only permits users with the specified Discord role to obtain the listed item
+- Added receipt system which generates a downloadable receipt of any purchase or invoice paid
+- Added item statistics. This can be viewed by Administrators via the item listing page
+- Added containers and block quotes
+- Added Node Events. Documentation will be available here
+- Added cents to store items
+- Added store categories
+- Added header dropdown options to the navbar
+- Added new notification system which will send users various notifications for things like new item releases, invoices, payments, review responses
+- Added a red box that displays when the ToS box isn't checked on checkout
+- Added TikTok as a social link for the footer
+- Added advanced user searches that utilise user emails and IPs
+- Added blur style to admin area dropdowns to make the buttons more readable
+- Added blur style to navbar dropdowns to make the buttons more readable
+- Added faxstore (events variable) and bot (Discord bot variable) to extension files
+- Added new permission type 'Order Manager' which is able to update orders
+- Added option to edit partner positions
+- Added new sections on the admin panel for orders and subscriptions
+- Added Google Analytics which can be changed in advanced settings
+- Added various new documentation pages
+- Fixed a bug where store tags would still display if store search was toggled off
+- Fixed a issue where SSS was displayed on the audit logs page
+- Fixed a staff header button alignment issue on the user emails page
+- Fixed an issue where markdown wouldn't display on the home page if slideshows were disabled
+- Fixed a fatal crash that occurs when a role is undefined
+- Fixed a fatal 'Unknown Message' crash
+- Fixed an issue where creating static pages would redirect to the wrong page
+- Fixed a number of potential fatal crashes
+- Fixed a Stripe checkout crash when prices were not fixed to 2 decimal places
+- Updated 'Paid' item type to 'Digital Paid'
+- Updated 'Free' item type to 'Digital Free'
+- Updated general user permissions to a different database number
+- Updated the create and edit listing pages with a complete redesign
+- Updated user profile page to include buttons for downloads, orders, subscriptions, and payments
+- Updated the manager buttons on store listing pages
+- Updated 'General Pages' to 'Static Pages'
+- Updated carts. Cart items are now stored in the database instead of the users session
+- Updated the 'Blog Editor' permission to 'Editor'
+- Updated admin panel insight graphs to make them more secure
+- Updated scroll track thumbs to be transparent
+- Updated display of permissions on staff panel
+- Updated header buttons to be stored differently in SQL
+- Updated search page. It now displays blogs and user profiles
+- Updated how search results display. Items should now display in their positional order
+- Updated price display on listing pages
+- Updated header button styles
+- Updated the STT built in API to work with their new versions
+- Updated some page titles
+- Updated web embeds for item listing pages. The feature image and description now get passed
+- Updated the navbar display to have rounded corners (4px radius)
+- Updated a number of time displays to be relative to the users location time, not server time
+- Removed an old unban link that hasn't been used since 1.8.2
+- Removed the 'delete reviews' buttons on the reviews page. They're now only accessible in the review page itself

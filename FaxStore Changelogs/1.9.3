@@ -1,0 +1,11 @@
+This is a quick bug fix update which should fully resolve the issue users have with the below error
+
+Fatal error in , line 0
+Check failed: stack_overflow().
+
+---
+
+**Fixes**
+- Fixed issue where FaxStore would crash on start up due to a `stack_overflow()` error.
+- Fixed issue where initial boot would fail as `logger` wasn't defined.
+- Fixed issue where gift cards could not be manually added to user accounts with the new gift card system.

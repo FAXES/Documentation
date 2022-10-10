@@ -1,0 +1,82 @@
+While FaxStore had some aspects of email ability 1.9.2 brings this to the next level with 2 additional emailing forms along with the awaited custom invoicing functionality.
+
+As with most updates, there's not just these two changes, We always try to ensure FaxStore gets a quality and "worth it" update. Read the below changelog and notices for detailed release information.
+
+:::info
+This release requires `npm install` to be ran before starting after file updates.
+:::
+
+---
+
+
+#### Additions
+- Added option to email all item owners via the listing statistics page.
+- Added option to hide store listings from the default `/store` page to help reduce store front clutter and continue to have the item in a category.
+- Added custom invoicing to users via user ID or email.
+- Added a user settings page where users can edit their email and email subscription status.
+- Added new gift card system. They're now creatable and removable. **Current gift cards will need to be deleted and created again.**
+- Added removal of Discord roles when deleting an item from a user.
+- Added custom file uploads to individual users. Handy for commission works.
+- Added ability to email individual users via their user profile page.
+- Added [release tags](https://faxes.zone/i/grKrN.png). This can easily be used as an API with our [extension](https://github.com/FAXES/faxstore-extensions/tree/main/product%20version%20checker).
+- Added release edit ability.
+- Added option for users to dismiss all notifications.
+- Added option for users to delete all notifications.
+- Added extension folder. See below release notes for important information regarding extensions.
+- Added Discord slash commands with `/user` and `/search` being the current commands.
+- Added updated timestamps to releases.
+- Added 'Toggle pause' button on listing pages which removes the download and add to cart buttons. This won't effect redirect items.
+- Added more databasing checks for when FaxStore starts to make sure the database is reachable.
+- Added function that automatically adds customer Discord roles to users on join if they own items. Handy for those customers that always leave and re-join.
+- Added ability to view all paid and pending invoices in the admin panel.
+- Added button for users to cancel their own subscriptions.
+- Added version checker along with new console output on boot.
+
+#### Fixes
+- Fixed a login error and crash which resulted in images not downloading correctly. See [this reference error](https://discord.com/channels/358072894867111966/838593083833712671/952353889414430770). A custom package is now used.
+- Fixed the ongoing maintenance mode issue. This should now fully be resolved after such extensive testing.
+- Fixed an issue where markdown would render incorrectly on the Terms of Service (`/tos`) page.
+- Fixed some markdown headers in various pages not having correct style properties.
+- Fixed a Discord channel error (`CHANNEL_NOT_CACHED`).
+- Fixed an error where digital free items would show `$0` as the cost of the item.
+- Fixed issue where 'Order Managers' didn't have access to view and update order details.
+- Fixed an issue where emails would display it was sent from 'all'.
+
+
+#### Alterations
+- Updated store statistic graphs to now be relative to the year instead of overlapping from the past year.
+- Updated time display formats for the user manager table to display relative time to the user.
+- Updated time display formats for staff email page to display relative time to the user.
+- Updated the Email Manager page to be overall better in design and more user friendly.
+- Updated the staff page header, moving 'Static Pages' and 'Blog Manager' to the 'Pages' dropdown.
+- Updated the display of links in [information containers](https://docs.faxes.zone/c/products/md-guide-containers) to now be white underlined instead of blue.
+- Updated the `Create Release` button on the store listings page to now display `View Releases`.
+- Updated staff header item 'Mass Email' to display 'Email Manager'.
+- Updated console output for update manager content. It was known it confused some users so the new global format should be much easier.
+
+#### Removals
+- Removed the 'Ban User' button from the user manager page.
+- Removed the 'Email User' button from the user manager page.
+- Removed 'Giftcards' button from the user dropdown. The `/giftcards` page is still around. However, you may need to be added to the header manually.
+
+---
+
+## Gift cards
+Gift cards have been changed near fully. For gift cards to now register, you'll need to delete existing gift cards and create them through the gift card creator in the store settings page.
+
+Even if you don't use gift cards it's highly recommended to delete the current default ones fully from your store.
+
+## Maintenance mode
+This mode has for a long time suffered issues when trying to exit from maintenance mode. This should now be fully resolved after extensive development and live testing. Sorry for the extended delay.
+
+## Extensions Folder
+With version now ships with a new `extensions` folder. In version 2.0 the `extraFiles` config.json option will be removed.
+
+The extension folder works like magic and currently accepts `.js` files to execute automatically. This means it's a drag and drop system with no loading configuration needed.
+
+Current `extraFiles` config.json will continue to run for a limited time only. Consider updating as soon as possible.
+
+## Slash Commands
+As the new version ships with slash commands. You will have to reinvite your Discord bot using the below link. If not, you'll get Discord related bugs.
+`https://discord.com/oauth2/authorize?client_id=CLIENT_ID_HERE&permissions=8&scope=bot%20applications.commands
+`

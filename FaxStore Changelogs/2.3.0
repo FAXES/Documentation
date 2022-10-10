@@ -1,0 +1,34 @@
+First off, checkout the new [FaxStore blog post](https://weblutions.com/blog/b/faxstore-automation).
+
+This update brings a payment method to FaxStore which was highly requested - [Square](https://square.com)! Along with Square, so many additional Displays have dropped to further customize your store-front pages. Enhancements and new features is what this update is all about!
+
+:::danger
+Ensure to **DELETE** the `src` folder and upload the new one when updating.
+:::
+
+- Added [Square](https://square.com) as a new checkout method.
+- Added new store related events (`storeListingCreate`, `storeListingEdit`, `storeListingPause`, and `storeListingDelete`).
+- Added form descriptions - [#87](https://bugs.weblutions.com/f/87).
+- Added many new displays for the following pages; user settings, team, partners, form, gallery, header, and footer - [#81](https://bugs.weblutions.com/f/81).
+- Added ability to view submissions of a form that was deleted.
+- Added invoice IDs shown on checkout pages.
+- Added new form value saving to the invoice creation form. This is in testing and planned to be expanded to all forms.
+- Added support for `.SHARF` files in extensions.
+- Added fallback function for invoices created for non-existing users.
+- Added the product ID to the review object, this reflected in events as well - [#70](https://bugs.weblutions.com/f/70).
+- Added ability to edit forms - [#84](https://bugs.weblutions.com/f/84)
+- Added further backend data reporting so bugs can be fixed faster and usage tracked better between stores.
+- Added `notificationCreated` event that is emitted when a notification is created for a user - [#72](https://bugs.weblutions.com/f/72).
+- Fixed an issue where closed forms displayed the reply box still.
+- Fixed an issue where review replies couldn't be made.
+- Fixed [StrongerTogether](https://strongertoegther.network) ban checking to fit their new API.
+- Fixed the display of reply boxes on form settings.
+- Fixed `.apply` being undefined - [#1707](https://bugs.weblutions.com/i/1707).
+- Fixed a bug within emails that would show incorrect links and data in confirmation emails - [#1692](https://bugs.weblutions.com/i/1692).
+- Fixed store categories showing 'Na' when no description is set - [#1538](https://bugs.weblutions.com/i/1538).
+- Updated the default CSS file to reduce load times on pages that featured galleries or slideshows.
+- Updated the whole payment backend making it more efficient.
+- Updated forms table in staff panel to display better.
+- Updated all backend content to fit new weblutions.com domain.
+- Updated the icons on the checkout pages to adjust to Square being added.
+- Removed a large amount of unused icons from the `icons.svg` file.

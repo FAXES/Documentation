@@ -1,0 +1,33 @@
+In this update some much needed bugs get fixed along with some new features that were requested or thought of. FaxStore v2 aims to give you and your clients the best experience possible and without updates that can't happen.
+
+THIS UPDATE INCLUDES AN SQL UPDATE FILE
+Run this SQL file to update your tables before starting this new version for the first time.
+
+THIS UPDATE MAKES CHANGES TO THE CONFIG FILE
+---
+Some changes have examples and more detailed descriptions @ docs.faxes.zone/c/faxstore/new-release
+
+Here's what has changed:
+
+- Multiple global customer roles can now be used. Add a `,` (comma) to add more. See https://docs.faxes.zone/c/faxstore/new-release for more.
+- Multiple item customer roles. You can now have more than one role for each item on the store. Same as above.
+- Added a new product type - 'Redirect'. Instead of Free or Paid you have have it redirect to an external link for viewing.
+- Added a better way to view reviews. You can now see a review in full and they can be replied to by the site admins. Example; https://faxes.zone/i/K3zTI.gif
+- Added ability to add gift cards to users like you can with products. There's now a separate dropdown at the gift card section.
+- Customers can now only review products they own.
+- Added multiple new Discord commands. See https://docs.faxes.zone/c/faxstore/new-release#new-discord-commands for more!
+- Added IP as a detail for admins to view on user profiles.
+- Added a how to use gift cards on user page. See https://faxes.zone/i/QzQJL.png.
+- Added purchase transaction Ids to user profiles for each purchase. This will not reflect for any past purchases.
+- Added a copy button for gift card codes. See https://faxes.zone/i/TOD9X.png.
+- Added 'View Review' buttons to the bottom of reviews.
+- Added placeholders for fields when creating items.
+- Added product store links to PayPal item descriptions.
+- Added more details to the memos of transactions.
+- Added new config options for the new settings.
+- Fixed a bug that didn't allow purchases that were $0.
+- Fixed a bug that prevented partners being deleted.
+- Fixed the 502 not working at times. It should now work as intended.
+- Fixed an issue that would change the gift card amount to the orders total checkout amount instead of removing that amount.
+- Changes to the gift card table on user profiles. Some listed in this change-log.
+- Docs links have been fixed on staff home page.

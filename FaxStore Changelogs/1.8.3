@@ -1,0 +1,24 @@
+This update brings one new footer related feature and some fixes and code clean up.
+---
+**Changes:**
+
+- Added custom footer text that can be edited via the [Advanced Settings](https://weblutions.com/releases/34#) page
+- Fixed a fatal error that occurred when the `user` command was used without mentioning a user. It now defaults to the message author
+- Fixed a fatal error that was caused from a general page link having a `'` symbol in them
+- Fixed an error that would be fatal when the promotion code didn't apply to the users session
+- Changed and cleaned up code in various locations to improve speed and execution
+---
+This is only a smaller update but we're working on fixing all the (hidden) bugs in FaxStore currently before new features and 1.9 is created. FaxStore hasn't had a set of clean up versions since it's first release, so this is much needed.  
+
+Be sure to report any bugs you do find.  
+
+Also, big shout out to *[Pluto](https://faxes.zone/partner/pluto)* for help with this update.
+
+
+# HOTFIX
+This update fixed the issue were FaxStore customers couldn't start their application due to a licensing error.  
+
+This is now fixed.
+
+All you have to do is replace the following files;
+`index.js`, `backend.js`, `updatemanager.js`, `/views`
