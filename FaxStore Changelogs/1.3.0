@@ -1,5 +1,5 @@
 This update brings a few new minor features along with some bug fixes. The focus in this update is the review pages and how they're displayed along with edits to account pages and STT API being added.
----
+--
 **THIS UPDATE INCLUDES AN SQL UPDATE FILE!!!**
 To update your SQL tables ONLY execute the `UPDATE.sql` file. This must be done before starting the application on the new update
 
@@ -7,7 +7,7 @@ To update your SQL tables ONLY execute the `UPDATE.sql` file. This must be done 
 You will be required to re-create all promotion codes on your store as there's new features. Existing codes will no longer work.
 
 There is no updates to the config file.
----
+--
 - Added stars to review pages and removed text.
 - Added STT API to the site. [See more](https://strongertogether.network/article/16)
 - Added max uses to promotion codes.
