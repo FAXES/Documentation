@@ -4,7 +4,9 @@ THIS UPDATE INCLUDES AN SQL UPDATE FILE
 Run this SQL file to update your tables before starting this new version for the first time.
 
 THIS UPDATE MAKES CHANGES TO THE CONFIG FILE
+
 ---
+
 Some changes have examples and more detailed descriptions @ docs.faxes.zone/c/faxstore/new-release
 
 Here's what has changed:
