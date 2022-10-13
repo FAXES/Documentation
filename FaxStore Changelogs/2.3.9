@@ -1,0 +1,14 @@
+This update fixes login and session-related issues including the famous invalid "code" in the request error message a small amount of users experience.
+
+- Fixed the `TokenError: invalid "code" in request` some users experienced. This still needs testing throughout multiple stores
+- Updated the auto updater to execute commands more efficiently
+- Removed the backend usage of `req.session.loginType` in favour of `req.user.provider`
+- Removed user discriminators from Discord users
+
+
+## Invalid "code" in request
+When making an OAuth request to discord we get a link that the user uses to 'authorise' themselves. After a user authorises themselves we receive a set of data from Discord including an [Access Token](https://www.rfc-editor.org/rfc/rfc6749). This token and data expire after a short amount of time. If it expires we get an invalid code, which causes our error.
+
+When completing a login, FaxStore fetches some additional data from Discord like a profile image, this is done via a GET HTTP request to Discord. We were facing an issue with this request though as Discord was taking some time to respond with the data, during this time our Access Token would expire and fail the process -  meaning one would need to log in again. This can come down to a high number of factors, however, the most notable one is the connection to Discord servers and the amount of data attached to the user's account.
+
+So what's the fix? We've moved some functions around in FaxStore to ensure that the user getting a 200 response back is the priority over fetching the additional data (profile picture, banner, guilds, etc). So 2.3.9 and later should no longer experience this issue. If you do please [create an issue](https://bugs.weblutions.com/projects/faxstore/add?t=bug).
