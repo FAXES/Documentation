@@ -47,6 +47,22 @@ node .
 ```
 
 ### Step Four
+First things first, create a Discord application through the [Discord developer portal](https://discord.com/developers/applications)
+Now on the OAuth2 page you will need to add the following as a redirect and replace the domain with yours. This is used in our login callback to actually log the user in.
+
+```
+https://example.com/auth/callback
+```
+*Change `example.com` to represent your domain name.*
+
+Now, copy the Client ID and place it in the config file of WebForms under the `discord` section. Also copy the Client Secret from the Discord page into your Webforms config.
+
+`oauthId` = Client ID
+`oauthToken` = Client Secret
+
+Save file. Completed.
+
+### Step Five
 To edit the site's logo or background you can find your WebForms root directory. Then navigate to `public/img/` and you can replace the files there! (Needs to be .png)!!
 
 WebForms will now be started and running.
