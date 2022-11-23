@@ -1,4 +1,8 @@
-To create a extension you can use the following code example to get you started
+Creating your first extension is an easy process. All you need to do is create an extension file in the `extensions` folder. These files can only be in `.js` or `.sharf` file types.
+
+*`.sharf` file extensions are private to Weblutions products and official extensions.*
+
+Here is a little example of an extension.
 
 ```js
 const config = require('../config.json'); // Original Config For Faxstore
