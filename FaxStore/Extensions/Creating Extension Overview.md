@@ -19,7 +19,7 @@ const extConfig = require('./configs/EXTENSION_CONFIG.json'); // Extensions conf
 */
 
 module.exports = async function(app, connection, bot, faxstore) {
-   console.log(`Extension started!`);
+	console.log(`Extension started!`);
 	
 	app.get(`/myextension`, function(req, res) {
 		res.send(`Here is a page running!`);
