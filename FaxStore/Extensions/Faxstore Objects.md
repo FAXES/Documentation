@@ -1,6 +1,4 @@
-# Creating Extensions
-
----
+Here are some helpful tools in regards to [FaxStore Events](/c/faxstore/events) arguments.
 
 ## User Object
 
