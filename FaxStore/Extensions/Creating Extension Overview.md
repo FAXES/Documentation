@@ -6,14 +6,14 @@ Here is a little example of an extension.
 
 ```js
 const config = require('../config.json'); // Original Config For Faxstore
-const extConfig = require('./configs/EXTENSION_CONFIG.json'); // Extensions config
+const extConfig = require('./configs/EXTENSION_CONFIG.json'); // Extensions config, these should be created for extensions. Full path; extensions/configs/file.json
 
 /*
 	module.exports params:
 	- app: ExpressJS application.
 	- connection: MySQL connection
 	- bot: Discord bot
-	- faxstore: FaxStore event system
+  - faxstore: FaxStore event system
 */
 
 module.exports = async function(app, connection, bot, faxstore) {
@@ -24,3 +24,5 @@ module.exports = async function(app, connection, bot, faxstore) {
 	});
 }
 ```
+
+This registers a page under the /myextension link and simply shows the "Here is a page running!" text.
