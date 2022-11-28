@@ -126,6 +126,6 @@ Below you will find all the info returned when the `reviewObject` is called.
 }
 ```
 
+---
 
-### More Objects Coming Soon
-
+> Special thanks to [Shawn E.](https://weblutions.com/user/668497496124686347) who maintains this documentation page.
