@@ -82,6 +82,12 @@ faxstore.on('login', function(userObject, DbUserResults) {
 | storeListingPause | userObject, listingId, newState | Emits when a store listing pause setting is toggled. | on |
 | storeListingDelete | userObject, listingId | Emits when a store listing is deleted | on |
 | notificationCreated | userId, redirectURL, detailsObject | Emits when a notification is created. | on |
+| quoteCreated | userObject, quoteID, quoteObject, createdAt | Emits when a quote is created. | on |
+| quoteEdited | userObject, quoteID, quoteObject | Emits when a quote is edited/updated | on |
+| quoteAccepted | userId, quoteID | Emits when a quote accepted by a user | on |
+| packageCreated | userObject, packageID, packageObject, createdAt | Emits when a package is created. | on |
+| packageEdited | userObject, packageID, packageObject | Emits when a package is edited | on |
+| packageDeleted | userObject, packageID, packageObject | Emits when a package has been deleted | on |
 
 
 *[Improve this page](https://github.com/FAXES/Documentation/blob/main/FaxStore/Events.md)*
