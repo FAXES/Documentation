@@ -42,3 +42,4 @@ This function is available as an event, and function in backend and EJS files.
 | MANAGE_GIFTCARDS | Allows staff to add and delete gift cards from users. |
 | OWNER | Allows every permission listed and can't be overridden by any permission. |
 | MANAGE_FORMS | Allows staff to create, delete, edit, and view all forms. |
+| MANAGE_QUOTES | Allows a user to create, update, and delete quotes. |
