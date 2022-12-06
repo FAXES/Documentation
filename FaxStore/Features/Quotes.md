@@ -14,5 +14,5 @@ To use quotes as a user is quite simple, all you need to do is go to the URL a s
 If your store doesn't have quotes this means you are not of version 2.4.0 of FaxStore. To update go [here](https://weblutions.com/my/controller) click check for updates then update FaxStore and boom! Just like that you are on the latest verision of FaxStore.
 
 :::danger
-You must be on version 2.4.0 or above for this feature to available.
+You must be on version 2.4.0 or above for this feature to be available.
 :::
