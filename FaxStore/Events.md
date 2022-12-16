@@ -48,6 +48,7 @@ faxstore.on('login', function(userObject, DbUserResults) {
 | addDiscordRole             | userId, roles [array]                                  | Adds roles to the user if possible.                                                       | emit |
 | invoiceCreated             | invoiceId, invoicedUser, staffUser, invoicedItems, due | Emits when a invoice is created.                                                          | on   |
 | invoiceUpdated             | invoiceId, invoicedUser, due, state | When an invoice is automatically updated for it's status, this event emits.               | on   |
+| invoicePaid | invoiceID, paymentType, receiptID, invoicedItems | Emits when an invoice is paid by a user. | on |
 | login                      | userObject, DbUserResults                              | Emits when a user logs into the site.                                                     | on   |
 | logout                     | userObject                                             | Emits when a user logs out of the site.                                                   | on   |
 | createUserAccount          | userObject, serviceType                                | Emits when a users account is first created.                                              | on   |
