@@ -18,6 +18,8 @@ Once you have configured FaxStore to have all of the **required** configuration 
 | processPort | siteInformation |  The Port for NGINX to use. **[R]** | ``number`` |
 | domain | siteInformation |  The website domain name eg: faxes.zone **[R]** | ``string`` |
 | ownerId | siteInformation |  The ID of the site owner **[R]** | ``string`` |
+| startDebug | siteInformation |  Display debug information on start up | ``true or false`` |
+| blockCORS | siteInformation |  Block built in CORS policy | ``true or false`` |
 | usePayPal | payments |  Toggles PayPal as a payment method | ``true or false`` |
 | useStripe | payment |  Toggles Stripe as a payment method | ``true or false`` |
 | stripePublishableKey | payment |  The Stripe publisable key. Guide [here](https://docs.faxes.zone/c/faxstore/stepfour#stripe) | ``string`` | 
@@ -52,3 +54,5 @@ Once you have configured FaxStore to have all of the **required** configuration 
 | useEmbeds | discordConfig |  Toggles Embeds | ``true or false`` |
 | name | redirects |  Sets the redirect name eg. discord | ``string`` |
 | link | redirects | The URL for the redirect eg. faxes.zone/d | ``URL`` |
+
+*[Improve this page](https://github.com/FAXES/Documentation/blob/main/FaxStore/Installation/Step%20Three%20-%20Configuration.md)*
