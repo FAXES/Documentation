@@ -33,4 +33,4 @@ faxtrack.on('projectCreated', function(userObject, projectObject) {
 | feedbackDeleted | userObject, feedbackObject | Emits when a feedback topic is deleted | on |
 | feedbackComment | userObject, comment, feedbackObject | Emits when a feedback topic is commented on | on |
 
-*[Improve this page](https://github.com/FAXES/Documentation/blob/main/FaxStore/Events.md)*
+*[Improve this page](https://github.com/FAXES/Documentation/blob/main/Product%20Documentation/FaxTrack/FaxTrack%20Events.md)*
