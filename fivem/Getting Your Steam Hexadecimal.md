@@ -11,6 +11,5 @@ It's time to get your [Steam](https://store.steampowered.com/) hexadecimal lets 
 4. You now have your Steam hexadecimal. Copy it and paste it where you are needing it.
 
 ::: danger
-    # Note
-    This documentation page is a public page, any external source is able to link you to this pages.
+This documentation page is a public page, any external source is able to link you to this pages.
 :::
