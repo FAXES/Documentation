@@ -12,7 +12,6 @@ const config = require('../config.json'); // Original Config For Faxstore
 	- app: ExpressJS application.
 	- connection: MySQL connection
 	- bot: Discord bot
-  - faxstore: FaxStore event system
 */
 
 module.exports = async function(app, connection, bot) {
