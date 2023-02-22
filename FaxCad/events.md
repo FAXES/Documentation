@@ -32,7 +32,6 @@ faxcad.emit('CreateAuditLog', 'UserID', 'Logged in', `logged in at <t:${date}>`)
 
 | Name                       | Arguments                                              | Description                                                                               | Type |
 |----------------------------|--------------------------------------------------------|-------------------------------------------------------------------------------------------|------|
-
 | CreateAuditLog | action, note, userId | Generates an audit log. All arguments are required | emit |
 | onStart | licenseKey, siteDomain | Emits when FaxCad first starts. | on |
 
