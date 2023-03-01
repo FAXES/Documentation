@@ -1,9 +1,13 @@
 The invoice API endpoints allow you to create, edit, and delete invoices on FaxStore.
 
 /POST /api/invoice
-Create an invoice and sed it to a user.
+Create an invoice and optionally have it notify the user.
 
-- dff
+- uid [String] The accounts user ID to link the invoice too.
+- username [String] The accounts username, optional.
+- items [Array] A JSON array of [items](#) to have in the invoice.
+- due [Timestamp] Unix timestamp of when the invoice is due.
+- status [String] The status of the invoice. Default 'Paid'.
 
 = response
 
