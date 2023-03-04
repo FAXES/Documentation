@@ -4,7 +4,10 @@ This page goes through all the content types that are used in FaxStore. Mainly w
 The `String` object is used to represent and manipulate a sequence of characters. Strings are useful for holding data that can be represented in text form.
 
 #### Array
-The `Array` object, as with arrays in other programming languages, enables storing a collection of multiple items under a single variable name
+The `Array` object, as with arrays in other programming languages, enables storing a collection of multiple items under a single variable name.
+
+#### Boolean
+A `true` or `false` value.
 
 #### Timestamp
 A `Timestamp` is represented as an Integer which is formated by the number of milliseconds elapsed since the epoch, which is defined as the midnight at the beginning of January 1, 1970, UTC.
