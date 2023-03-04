@@ -18,10 +18,11 @@ Edit or modify an existing invoice.
 
 - param
 
-= const e = params[i].trim();
-let desc = e.substring(e.indexOf(" "));
-let name = e.substring(0, e.indexOf(" "));
-if(e.length > 3) formattedParams += `<tr><td><code>${name}</code></td><td>${desc}</td></tr>`;
+= {
+  test: true,
+  message: "string here",
+  inty: 1234
+}
 
 /PATCH
 
