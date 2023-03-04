@@ -13,6 +13,28 @@ For example this would look like `1677935185833`
 #### Integer / Number
 A `Number` is a digit based value which is not wrapped in a string or other form. Eg; `546`.
 
+#### Invoice Items
+An `Object` which contains data for invoices. Supports multiple `Array` entries and *doesn't* require the `productId`, `subId`, and `url` options. Example;
+```
+[
+  {
+    title: "Item One",
+    url:"https://weblutions.com/store/itemone",
+    description: "Item one is the best product ever!",
+    price: "9.99",
+    productId: null,
+    subId: null
+  },
+  {
+    title: "Item Two",
+    description: "Custom item two",
+    price: "5.00",
+  },
+]
+```
+
+
+
 ---
 
 *Ref; [developer.mozilla.org](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects)*
