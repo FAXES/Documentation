@@ -3,6 +3,8 @@ The invoice API endpoints allow you to create, edit, and delete invoices on FaxS
 /GET /api/invoice/<invoice_id>
 Fetch an existing invoice's details by ID.
 
+- invoice_id A URL parameter which is the invoice ID.
+
 = {
   "id": 25,
   "userId": "117947035129820949693",
