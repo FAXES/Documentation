@@ -1,6 +1,6 @@
 The invoice API endpoints allow you to create, edit, and delete invoices on FaxStore.
 
-/GET /api/invoice/<invoice_id>
+/GET /api/invoice/invoice_id
 Fetch an existing invoice's details by ID.
 
 - invoice_id The invoice ID to be deleted. Passed as a URL parameter.
@@ -42,7 +42,7 @@ Create an invoice and optionally have it notify the user.
 
 /POST
 
-/PATCH /api/invoice/<invoice_id>
+/PATCH /api/invoice/invoice_id
 Edit or modify an existing invoice.
 
 - invoice_id The invoice ID to be deleted. Passed as a URL parameter.
@@ -55,7 +55,7 @@ Edit or modify an existing invoice.
 
 /PATCH
 
-/DELETE /api/invoice/<invoice_id>
+/DELETE /api/invoice/invoice_id
 Delete an existing invoice.
 
 - invoice_id The invoice ID to be deleted. Passed as a URL parameter.
