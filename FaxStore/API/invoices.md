@@ -1,4 +1,4 @@
-The invoice API endpoints allow you to create, edit, and delete invoices on FaxStore.
+Invoices are a powerful tool that can be used to all all your payment flows to come through the one location rather than using multiple services to process your businesses payment flows. The invoice API can be used to help automate this progess through external applications like through an invoicing bot for example.
 
 /GET /api/invoice/invoice_id
 Fetch an existing invoice's details by ID.
@@ -36,8 +36,8 @@ Create an invoice and optionally have it notify the user.
 - notify [Boolean](/c/faxstore/types#boolean) Whether to send the user a notification.
 
 = {
-    invoiceID: 12,
-    createdAt: 1677935185833
+    "invoiceID": 12,
+    "createdAt": "1677935185833"
 }
 
 /POST
@@ -56,10 +56,12 @@ Edit or modify an existing invoice.
 /PATCH
 
 /DELETE /api/invoice/invoice_id
-Delete an existing invoice.
+Delete an existing invoice from FaxStore.
 
 - invoice_id The invoice ID to be deleted. Passed as a URL parameter.
 
 = response
 
 /DELETE
+
+*All requests require the Authorization header to be passed with your authorization token.*
