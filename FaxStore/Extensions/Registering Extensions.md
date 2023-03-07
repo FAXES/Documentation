@@ -12,6 +12,7 @@ faxstore.registerExtension({
     config: extConfig,
     version: '1.1',
     author: 'FAXES',
+    url: 'https://github.com/FAXES/faxstore-extensions',
     pages: [extConfig.StaffPath]
 }, __filename);
 ```
