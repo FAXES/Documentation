@@ -1,6 +1,6 @@
 Events are a great way to build and develop extensions in FaxStore. Events are always being added and are documented here for your use in extensions or development of FaxStore.
 
-:::info
+::: info
 Suggest an event at the below link if you'd like to see a particular event
 [Suggest new event](https://bugs.faxes.zone/projects/faxstore/add?t=feedback)
 :::
@@ -42,12 +42,12 @@ faxstore.on('login', function(userObject, DbUserResults) {
 
 | Name                       | Arguments                                              | Description                                                                               | Type |
 |----------------------------|--------------------------------------------------------|-------------------------------------------------------------------------------------------|------|
-| CreateAuditLog             | UserId, Action, Details                                | Create An Audit Log. All Arguments Required.                                              | emit |
-| pushNotification           | userId, details, redirect                              | Creates a notification on the site for this user. All arguments required and are strings. | emit |
-| removeDiscordRole          | userId, roles [array]                                  | Removes roles from the user is possible.                                                  | emit |
-| addDiscordRole             | userId, roles [array]                                  | Adds roles to the user if possible.                                                       | emit |
-| invoiceCreated             | invoiceId, invoicedUser, staffUser, invoicedItems, due | Emits when a invoice is created.                                                          | on   |
-| invoiceUpdated             | invoiceId, invoicedUser, due, state | When an invoice is automatically updated for it's status, this event emits.               | on   |
+| CreateAuditLog             | UserId, Action, Details | Create An Audit Log. All Arguments Required. | emit |
+| pushNotification           | userId, details, redirect | Creates a notification on the site for this user. All arguments required and are strings. | emit |
+| removeDiscordRole          | userId, roles [array] | Removes roles from the user is possible. | emit |
+| addDiscordRole             | userId, roles [array] | Adds roles to the user if possible. | emit |
+| invoiceCreated             | invoiceId, invoicedUser, staffUser, invoicedItems, due | Emits when a invoice is created.  | on |
+| invoiceUpdated             | invoiceId, invoicedUser, due, state | When an invoice is automatically updated for it's status, this event emits. | on |
 | invoicePaid | invoiceID, paymentType, receiptID, invoicedItems | Emits when an invoice is paid by a user. | on |
 | login                      | userObject, DbUserResults                              | Emits when a user logs into the site.                                                     | on   |
 | logout                     | userObject                                             | Emits when a user logs out of the site.                                                   | on   |
