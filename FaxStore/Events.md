@@ -44,8 +44,8 @@ faxstore.on('login', function(userObject, DbUserResults) {
 |----------------------------|--------------------------------------------------------|-------------------------------------------------------------------------------------------|------|
 | CreateAuditLog             | UserId, Action, Details | Create An Audit Log. All Arguments Required. | emit |
 | pushNotification           | userId, details, redirect | Creates a notification on the site for this user. All arguments required and are strings. | emit |
-| removeDiscordRole          | userId, roles [array] | Removes roles from the user is possible. | emit |
-| addDiscordRole             | userId, roles [array] | Adds roles to the user if possible. | emit |
+| removeDiscordRole          | userId, roles | Removes roles from the user is possible. | emit |
+| addDiscordRole             | userId, roles | Adds roles to the user if possible. | emit |
 | invoiceCreated             | invoiceId, invoicedUser, staffUser, invoicedItems, due | Emits when a invoice is created.  | on |
 | invoiceUpdated             | invoiceId, invoicedUser, due, state | When an invoice is automatically updated for it's status, this event emits. | on |
 | invoicePaid | invoiceID, paymentType, receiptID, invoicedItems | Emits when an invoice is paid by a user. | on |
