@@ -1,15 +1,12 @@
-# Store Page
-
 ### What is the store page?
----
+
 The store page is where all of your products are kept for potential customers to view and browse. This is a great way to showcase the range of services you provide!
 
 ---
 ### Store page customisation
 There are a few different ways you can customise your store page. The first way is to set a different display for your store page. To find this navigate to yourdomain.com/staff/themes and select the "Store Page Display" button and in the dropdown you have got 2 options. 
-<br /> <br />
+
 - Option 1 Default: the default display will be set when your store is change it will look like this: ![Default Display](https://weblutions.com/assets/images/displays/storedefault.png)
-<br /> <br />
 - Option 2 Large: This display makes the page display more store items on the page at one time. This can be useful when you have alot of images. See below for what this will look like: ![Large Display](https://weblutions.com/assets/images/displays/storelarge.png)
 
 ---
@@ -29,5 +26,4 @@ To create a new store item navigate to yourdomain.com/staff/itemcreate when you 
 | Item Type | This category allows you define what type of item you are selling. This also includes the price and the discord role given (Discord role is optional).
 | Advanced Settings | This category contains extra settings that may be desired. |
 
-<br /> <br />
 Once your item has been created click the "Create Listing" button and your item has been created successfully! You will be redirected to the item page.
