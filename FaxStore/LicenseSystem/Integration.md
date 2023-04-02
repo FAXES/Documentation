@@ -72,14 +72,12 @@ The license system comes with required and optional options when making the requ
 Required options:
 
 - Product Id - the FaxStore item listing Id.
-
 - Users License Key - the users license key for this product located on the license dashboard.
 
 
 Optional Options:
 
 - `log` - setting this to `false` will disable the the request being put into the 'Previous Auths' table.
-
 - `info` - information or details that can be passed through the request and logged into the 'Previous Auths' table.
 
 
