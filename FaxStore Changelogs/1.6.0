@@ -7,7 +7,9 @@ SQL is now on an auto update system! This means you no longer have to manually i
 
 **CONFIG CHANGES**
 Your config file will need to be re-done. After this update new config changes will be automatic!
+
 ---
+
 Sorry for the long wait that took for this update to be pushed. Every bug should be squashed and there's a lot of changes made to your site.
 
 This is what's changed:
