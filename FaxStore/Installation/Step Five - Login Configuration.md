@@ -4,13 +4,9 @@ FaxStore comes with four login methods you can pick from.
 
 
 - Discord
-
 - GitHub
-
 - Google
-
 - Twitter
-
 
 There is a section below for each login method and how to obtain the API tokens to login with these services.
 
