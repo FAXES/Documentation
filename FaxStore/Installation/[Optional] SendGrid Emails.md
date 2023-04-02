@@ -2,7 +2,6 @@ FaxStore comes shipped with the option to have an email system using popular API
 
 
 - When a customer purchases an item it sends them a confirmation email with a list of what they bought.
-
 - You're also able to email a specific user or all users with a custom email to notify users of changes.
 
 ---
