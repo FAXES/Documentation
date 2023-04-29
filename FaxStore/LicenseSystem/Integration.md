@@ -67,21 +67,9 @@ Parameters:
 
 ### V1 Request
 
-The license system comes with required and optional options when making the request.
-
-Required options:
-
-- Product Id - the FaxStore item listing Id.
-- Users License Key - the users license key for this product located on the license dashboard.
-
-
-Optional Options:
-
-- `log` - setting this to `false` will disable the the request being put into the 'Previous Auths' table.
-- `info` - information or details that can be passed through the request and logged into the 'Previous Auths' table.
-
-
----
+:::danger
+Please note the V1 API has been removed from the License System in versions 1.9.0 and above. If you really need to use the V1 API, you can load [this JS file](https://weblutions.com/u/L8KleI.js) as an extension.
+:::
 
 ```css
 Type: POST
@@ -90,22 +78,4 @@ Headers:
     User-Agent: '*'
     Accept:  'application/json, text/plain, */*'
     authorization: USERS_LICENSE_KEY
-```
-
-Success Response Information: (Object)
-```js
-{
-  status: 'OK',
-  pass: true,
-  details: 'Authorisation completed!'
-}
-```
-
-Failed Response Information: (Object)
-```js
-{
-  status: 'NOT FOUND',
-  pass: false,
-  details: 'The supplied license key was not found. Please check your auth key is correct - https://license.my.domain'
-}
 ```
