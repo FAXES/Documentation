@@ -1,11 +1,8 @@
 - [V2 - Node.Js](#v2---node-js)
-- [V1 - Node.Js](#v1---node.js)
 - [V2 - Lua](#v2---lua)
-- [V1 - Lua](#v1---lua)
 - [V2 - PHP](#v2---php)
- 
 
-## V2 - Node JS
+## Node JS
 
 ```js
 var options = {
@@ -25,40 +22,7 @@ var req = https.request(options, (res) => {
 });
 ```
 
-## V1 - Node.Js
-
-```js
-const axios = require("axios");
-const options = {
-    productId: 1,
-    licenseKey: "phfn2408g02hg04g0230iog",
-    log: false,
-    info: "Information to add to the request."
-}
-
-
-let licensecheck = axios({
-method: 'post',
-url: `https://license.your.domain/api/checkitem/${options.productId}`,
-    headers: {
-        Accept: 'application/json, text/plain, */*',
-        'User-Agent': '*',
-        'authorization': options.licenseKey,
-    },
-    params: {
-        info: options.info,
-        log: options.log
-    }
-});
-
-if(licensecheck.data.pass) {
-    console.log('the license system has passed.');
-} else {
-    console.log('the license system has failed.');
-}
-```
-
-## V2 - Lua
+## Lua
 ```lua
 local productId = 1;
 local licenseKey = 'ABC_123';
@@ -78,23 +42,7 @@ end, "POST", "", {
 });
 ```
 
-## V1 - Lua
-
-```lua
-local productId = 1
-local licenseKey = "ABC_123"
-PerformHttpRequest("https://license.example.com/api/checkitem/" .. productId, function(code, data, headers)
-    print("Return code: " .. code)
-    print("Return data: " .. data)
-    print("Return headers: " .. headers)
-end, "POST", "", {
-    ["Accept"] = "application/json, text/plain, */*",
-    ["User-Agent"] = "*",
-    ["authorization"] = licenseKey
-})  
-```
-
-## V2 - PHP
+## PHP
 
 ```php
 <?php
@@ -122,3 +70,5 @@ if ($data->pass == true) {
 };
 ?>
 ```
+
+*This file has been updated to remove the V1 API options.*
