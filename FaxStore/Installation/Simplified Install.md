@@ -2,6 +2,10 @@ Welcome to the new simplified FaxStore install. Installing FaxStore is now as ea
 
 All software requirments and packages install easily now.
 
+:::danger
+This file **MUST** be run using the `root` user account.
+:::
+
 1. Create an A record to direct your domain DNS to your machines IP.
 2. Install FaxStore files to `/home/faxstore`.
 3. Run the below command to start the installation.
