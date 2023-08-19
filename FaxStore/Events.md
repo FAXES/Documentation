@@ -1,6 +1,6 @@
 Events are a great way to build and develop extensions in FaxStore. Events are always being added and are documented here for your use in extensions or development of FaxStore.
 
-::: info
+:::info
 Suggest an event at the below link if you'd like to see a particular event
 [Suggest new event](https://bugs.faxes.zone/projects/faxstore/add?t=feedback)
 :::
