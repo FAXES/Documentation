@@ -11,8 +11,6 @@ Simply placing the license request into a program doesn't guarantee security for
 - [Examples](/c/faxstore/license-system-examples)
 - [V1 Request](#v1-request)
 
----
-
 ## Single Request
 
 /POST /api/check/:PRODUCT_ID
