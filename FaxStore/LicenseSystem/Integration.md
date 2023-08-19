@@ -15,54 +15,40 @@ Simply placing the license request into a program doesn't guarantee security for
 
 ## Single Request
 
-Make a single product request to authorise a license key.
+/POST /api/check/:PRODUCT_ID
+Check a single license key against the system to confirm it complies with all its set conditions and that it's valid.
 
-**Required Options:**
-- `PRODUCT_ID'` the FaxStore item product ID.
-- `USERS_LICENSE_KEY` the authorisation key from the license system.
+- PRODUCT_ID [URL] the FaxStore item product ID
+- Authorization [Header] The license key to check/authorise
+- info [Body] Additional notes to send with the request
+- log [Body] Whether to log the license request or not, by default all requests are logged
 
-**Optional Options:**
-- `info` Query option to log additional details.
-- `log` Query Boolean option to set to make logs not log.
-
-
-```css
-Type: POST
-URL: 'https://license.your.domain/api/check/PRODUCT_ID'
-Headers:
-    User-Agent: '*'
-    Accept:  'application/json, text/plain, */*'
-    authorization: USERS_LICENSE_KEY
-Parameters:
-    info: 'string of details'
-    log: false
-```
+= 200 = {
+    status: "AUTHORISED",
+    pass: true,
+    details: `Authorisation completed - https://license.example.com`
+}
+/POST
 
 ## Multiple Request
 
 Make an API call to the license system to see if a key matches any of an array of items.
 
-**Required Options:**
-- `proIds'`Query array of FaxStore item product IDs.
-- `USERS_LICENSE_KEY` the authorisation key from the license system.
+/POST /api/check/multiple
+Check a single license key against the system to confirm it complies with all its set conditions and that it's valid.
+This method allows for multiple products to be provided if any have the matching license key it authorises.
 
-**Optional Options:**
-- `info` Query option to log additional details.
-- `log` Query Boolean option to set to make logs not log.
+- Authorization [Header] The license key to check/authorise
+- proIds [Body] An array of product IDs to have checked
+- info [Body] Additional notes to send with the request
+- log [Body] Whether to log the license request or not, by default all requests are logged
 
-
-```css
-Type: POST
-URL: 'https://license.your.domain/api/check/multiple'
-Headers:
-    User-Agent: '*'
-    Accept:  'application/json, text/plain, */*'
-    authorization: USERS_LICENSE_KEY
-Parameters:
-    info: 'string of details'
-    log: false
-    proIds: [8, 16]
-```
+= 200 = {
+    status: "AUTHORISED",
+    pass: true,
+    details: `Authorisation completed - https://license.example.com`
+}
+/POST
 
 
 ### V1 Request
