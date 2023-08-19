@@ -11,7 +11,7 @@ if(hasPermission(userData || userInfo || {id: userId, bitfield: userBitfield}, '
 
 // More refined example:
 if(hasPermission({id: '282762192544333827', bitfield: '19669056'}, 'MANAGE_OWNED_ITEMS')) {
-  console.log(`User has permission 'VIEW_USERS'`);
+  console.log(`User has permission 'MANAGE_OWNED_ITEMS'`);
 }
 ```
 This function is available as an event, and function in backend and EJS files.
