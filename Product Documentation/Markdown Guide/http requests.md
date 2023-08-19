@@ -2,7 +2,7 @@ HTTP requests allow you to create nicely displayed HTTP requests with their form
 
 ```
 /POST /spider/redback
-Redback are cool, they can kill, they can die, they can eat, and, they can sleep. Redbacks, the ultimate spider!
+Redbacks are cool, they can kill, they can die, they can eat, and, they can sleep. Redbacks, the ultimate spider!
 
 - BYTE The byte property of the spider
 
@@ -15,7 +15,7 @@ Redback are cool, they can kill, they can die, they can eat, and, they can sleep
 
 
 /POST /spider/redback
-Redback are cool, they can kill, they can die, they can eat, and, they can sleep. Redbacks, the ultimate spider!
+Redbacks are cool, they can kill, they can die, they can eat, and, they can sleep. Redbacks, the ultimate spider!
 
 - BYTE The byte property of the spider
 
@@ -24,4 +24,4 @@ Redback are cool, they can kill, they can die, they can eat, and, they can sleep
 }
 /POST
 
-*Reaplce `/POST` to another method to change the request.*
+*Replace `/POST` to another method to change the request.*
