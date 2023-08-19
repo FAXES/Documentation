@@ -13,7 +13,7 @@ Add a statistic to a project's connected statistics.
 /POST
 
 Data example:
-```
+```json
 {"title":"My Title","data":{"Earned":2,,"Host":"your.domain"},"expiresAt":"1662092459618"}
 ```
 
