@@ -1,6 +1,6 @@
 This section covers the backend API calls for the license system along with validating the product(s) you wish to authorise.
 
-::: info
+:::info
 Simply placing the license request into a program doesn't guarantee security for the product. Research ways to further secure your product via manipulation methods in your programming language.
 :::
 
