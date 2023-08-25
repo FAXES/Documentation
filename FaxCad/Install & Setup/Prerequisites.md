@@ -34,4 +34,4 @@ These specs may vary and be higher or lower, depending on things like, file size
 
 Whether you’re working on a personal project or managing your enterprise’s infrastructure, Linode has the pricing, support, and scale you need to take your ideas to the next level.
 
-<a href="https://linode.gvw92c.net/c/3604466/903982/10906" target="_blank" id="903982"><img src="https://weblutions.com/i/GSM2SG.png" border="0" alt="" width="728" height="90"/></a>
+<a href="https://turbonode.co/weblutions" target="_blank"><img src="https://weblutions.com/i/O29hdj.png" border="0" alt="" width="740" height="100"/></a>
