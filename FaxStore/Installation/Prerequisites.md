@@ -32,6 +32,6 @@ These specs may vary and be higher or lower, depending on things like, file size
 
 #### Don't Have a Server?
 
-Whether you’re working on a personal project or managing your enterprise’s infrastructure, Linode has the pricing, support, and scale you need to take your ideas to the next level.
+Looking for some swagger in your hosting? TurboNode's got you covered, they're cheap as chips and have great hardware!
 
 <a href="https://turbonode.co/weblutions" target="_blank"><img src="https://weblutions.com/i/O29hdj.png" border="0" alt="" width="740" height="100"/></a>
