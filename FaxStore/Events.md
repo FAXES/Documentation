@@ -52,7 +52,7 @@ faxstore.on('login', function(userObject, DbUserResults) {
 | login                      | userObject, DbUserResults                              | Emits when a user logs into the site.                                                     | on   |
 | logout                     | userObject                                             | Emits when a user logs out of the site.                                                   | on   |
 | createUserAccount          | userObject, serviceType                                | Emits when a users account is first created.                                              | on   |
-| ~~onStart~~                    | licenseKey, siteDomain                                 | Emits when FaxStore first starts.                                                         | on   |
+| ~~onStart~~                    | ~~licenseKey, siteDomain~~                                 | ~~Emits when FaxStore first starts.~~                                                         | on   |
 | userAccountDelete          | staffUserId, userId                                    | Emits when a users account is deleted.                                                    | on   |
 | userAccountUnban           | staffUserId, user                                      | Emits when a users account is un-banned.                                                  | on   |
 | userAccountBan             | staffUserId, user                                      | Emits when a users account is banned.                                                     | on   |
